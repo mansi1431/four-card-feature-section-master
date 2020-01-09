@@ -1,0 +1,111 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: hsl(0, 0%, 98%);
+	font-family: Poppins, curvise;
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+
+.heading {
+	position: relative;
+	padding: 100px 20px;
+	text-align: center;
+}
+
+h2 {
+	padding-bottom: 20px;
+}
+
+p {
+	font-size: 14px;
+	padding-bottom: 20px;
+}
+
+.column {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 10px;
+	padding: 10px;
+}
+
+.col_bg {
+	background-color: white;
+	border-radius: 10px;
+	padding: 40px;
+	margin-bottom: 20px;
+	border-top: 3px solid;
+	box-shadow: 2px 2px 2px 2px lightgrey;
+}
+
+.supervisor {
+	border-color: hsl(180, 62%, 55%);
+	height: 30%;
+	align-self: center;
+}
+
+.builder {
+	border-color: hsl(0, 78%, 62%);
+}
+
+.karma {
+	border-color: hsl(34, 97%, 64%);
+}
+
+.calculator {
+	border-color: hsl(212, 86%, 64%);
+	height: 30%;
+	align-self: center;
+}
+
+.icon {
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+
+.icon img {
+	transform: translate(165px, 25px);
+}
+
+/*Mobile responsive*/
+@media screen and (max-width:1024px) {
+	.icon img {
+		transform: translate(110px, 25px);
+	}
+
+}
+
+@media screen and (max-width:768px) {
+	.icon img {
+		transform: translate(60px, 10px);
+	}
+
+}
+
+@media screen and (max-width:460px) {
+	.icon img {
+		transform: translate(120px, 25px);
+	}
+
+	.column {
+		display: inline-block;
+	}
+
+}
+
+@media screen and (max-width:360px) {
+	.icon img {
+		transform: translate(100px, 25px);
+	}
+
+	.column {
+		display: inline-block;
+	}
+
+}
